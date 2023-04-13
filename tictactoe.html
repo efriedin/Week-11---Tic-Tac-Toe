@@ -5,78 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="tictactoe.css">
-
 </head>
 
 <body>
     <div class="container">
-        <div class="text-center my-5">
-            <h1>TIC-TAC-TOE</h1>
-            <hr />
+        <h1>Tic-Tac-Toe</h1>
+        <br />
+        <br />
+        <!--creating the board-->
+        <div class="play-area">
+            <div id="block_0" class="block"></div>
+            <div id="block_1" class="block"></div>
+            <div id="block_2" class="block"></div>
+            <div id="block_3" class="block"></div>
+            <div id="block_4" class="block"></div>
+            <div id="block_5" class="block"></div>
+            <div id="block_6" class="block"></div>
+            <div id="block_7" class="block"></div>
+            <div id="block_8" class="block"></div>
         </div>
+    <!--reset board button-->
+        <br />
+        <br />
+        <h2 id="winner"></h2>
+            <button onclick="reset_board()"RESET BOARD">RESET</button>
     </div>
 
-
-    <div class="container align-items-center">
-        <div class="row align-items-start">
-            <div class="col" id="topLeft">
-                <div class="p-5 border bg-light">
-                    top left
-                </div>
-            </div>
-            <div class="col" id="topCenter">
-                <div class="p-5 border bg-light">
-                    top center
-                </div>
-            </div>
-            <div class="col" id="topRight">
-                <div class="p-5 border bg-light">
-                    top right
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col" id="middleLeft">
-                <div class="p-5 border bg-light">
-                    middle left
-                </div>
-            </div>
-            <div class="col" id="middleCenter">
-                <div class="p-5 border bg-light">
-                    middle center
-                </div>
-            </div>
-            <div class="col" id="middleRight">
-                <div class="p-5 border bg-light">
-                    middle right
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-end">
-            <div class="col" id="bottomLeft">
-                <div class="p-5 border bg-light">
-                    bottom left
-                </div>
-            </div>
-            <div class="col" id="bottomCenter">
-                <div class="p-5 border bg-light">
-                    bottom center
-                </div>
-            </div>
-            <div class="col" id="bottomRight">
-                <div class="p-5 border bg-light">
-                    bottom right
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="tictactoe.css"></script>
     <script src="tictactoe.js"></script>
 </body>
 
