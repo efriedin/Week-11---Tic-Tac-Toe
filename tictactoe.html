@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="tictactoe.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Tic-Tac-Toe</h1>
-        <br />
-        <br />
-        <!--creating the board-->
-        <div class="play-area">
-            <div id="block_0" class="block"></div>
-            <div id="block_1" class="block"></div>
-            <div id="block_2" class="block"></div>
-            <div id="block_3" class="block"></div>
-            <div id="block_4" class="block"></div>
-            <div id="block_5" class="block"></div>
-            <div id="block_6" class="block"></div>
-            <div id="block_7" class="block"></div>
-            <div id="block_8" class="block"></div>
+    <section>
+        <header>
+            <h1 class="game--title">Tic Tac Toe</h1>
+        </header>
+        
+
+        <div class="game--container">
+            <div data-cell-index="0" class="cell" id="cell_0"></div>
+            <div data-cell-index="1" class="cell" id="cell_1"></div>
+            <div data-cell-index="2" class="cell" id="cell_2"></div>
+            <div data-cell-index="3" class="cell" id="cell_3"></div>
+            <div data-cell-index="4" class="cell" id="cell_4"></div>
+            <div data-cell-index="5" class="cell" id="cell_5"></div>
+            <div data-cell-index="6" class="cell" id="cell_6"></div>
+            <div data-cell-index="7" class="cell" id="cell_7"></div>
+            <div data-cell-index="8" class="cell" id="cell_8"></div>
         </div>
-    <!--reset board button-->
         <br />
-        <br />
-        <h2 id="winner"></h2>
-            <button onclick="reset_board()"RESET BOARD">RESET</button>
-    </div>
 
-    <script src="tictactoe.js"></script>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+    </section>
+<script src="tictactoe.js"></script>
 </body>
-
 </html>
