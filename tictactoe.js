@@ -16,7 +16,6 @@ const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 //set initial message to let players know whose turn it is
-
 statusDisplay.innerHTML = currentPlayerTurn();
 
 //set winnning conditions
@@ -45,7 +44,7 @@ function handlePlayerChange() {
 
 function handleResultValidation() {
     let roundWon = false;
-    //check each one and check whether the elements of our array  under those index;s match to declare winner or keep game going
+    //check each one and check whether the elements of our array  under those index's match to declare winner or keep game going
     for (let i = 0; i <= 7; i++) {  
         const winCondition = winningConditions[i]; 
         let a = gameState[winCondition[0]];
